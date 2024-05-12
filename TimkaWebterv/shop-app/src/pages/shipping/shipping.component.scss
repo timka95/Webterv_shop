@@ -1,0 +1,45 @@
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.item-table th,
+.item-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.item-table th {
+    background-color: #dfc39e;
+}
+
+.item-table tr:hover {
+    background-color: #dfc39e;
+}
+
+.item-table button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.item-table button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button{
+    margin: 10px 0;
+}

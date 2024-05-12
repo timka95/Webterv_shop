@@ -1,0 +1,52 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    // height: 20%;
+    background-color: rgba(246, 244, 228, 100);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+p{
+    padding: 10px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#specific-item-wrapper {
+    // position: absolute;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    height: 80%;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+#mate{
+    background-image: url('/assets/Bc/CartBc.jpg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-color: rgba(246, 244, 228, 255); /* Fallback color */
+        height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,20 @@
+#items-lister-wrapper {
+    padding: 20px;
+    align-items: center;
+}
+
+app-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mate{
+    background-image: url('/assets/Bc/CartBc.jpg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-color: rgba(246, 244, 228, 255); /* Fallback color */
+        height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,14 @@
+<div *ngFor="let item of items" class="item">
+    <h3>{{ item.name }}</h3>
+    <div class="discount-info">
+        <p *ngIf="item && item.discountPercent && item.discountPercent !== 0">
+            ${{ item.price }}
+            <span class="red-text">-{{ item.discountPercent }}% </span>
+            <span class="red-text">From:${{item.price * 100 / (100-item.discountPercent) }}</span>
+        </p>
+        <p *ngIf="!(item && item.discountPercent && item.discountPercent !== 0)">
+            Price: ${{ item.price }}
+        </p>
+    </div>
+    <img (click)="selectItem(item)" [src]="item.picture" alt="Item Image">
+</div>

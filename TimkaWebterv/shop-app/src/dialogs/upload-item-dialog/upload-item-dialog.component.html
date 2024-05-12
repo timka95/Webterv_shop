@@ -1,0 +1,36 @@
+<div id="upload-item-wrapper">
+    <h1 mat-dialog-title>Upload Item</h1>
+    <div mat-dialog-content>
+      <!-- Material inputs for uploading item properties -->
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="newItem.name" placeholder="Name" floatLabel="auto">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput [(ngModel)]="newItem.description" placeholder="Description" floatLabel="auto"></textarea>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Price</mat-label>
+        <input matInput type="number" [(ngModel)]="newItem.price" placeholder="Price" floatLabel="auto">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Discount</mat-label>
+        <input matInput type="number" [(ngModel)]="newItem.discountPercent" placeholder="Discount" floatLabel="auto">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Amount</mat-label>
+        <input matInput type="number" [(ngModel)]="newItem.amount" placeholder="Amount" floatLabel="auto">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>PictureName</mat-label>
+        <input matInput [(ngModel)]="newItem.picture" placeholder="/assets/pictures/$PictureName$.jpeg" floatLabel="auto">
+      </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+      <!-- Material buttons for canceling and uploading -->
+      <button mat-button (click)="onNoClick()">Cancel</button>
+      <button mat-button color="primary" [mat-dialog-close]="newItem" cdkFocusInitial (click)="upload()">Upload</button>
+    </div>
+  </div>
+  

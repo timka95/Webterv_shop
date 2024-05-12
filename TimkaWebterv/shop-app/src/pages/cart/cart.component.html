@@ -1,0 +1,29 @@
+<div id="mate">
+<div id="specific-item-wrapper">
+    <div id="items-wrapper">
+        <div class="item" *ngFor="let itemObj of items">
+            <div class="item-details">
+                <h3>{{ itemObj.item.name }}</h3>
+                <p>Price: ${{ itemObj.item.price }}</p>
+                <p>Discount: ${{ itemObj.item.discountPercent }}</p>
+                <img [src]="itemObj.item.picture" alt="Item Image">
+            </div>
+            <div class="quantity-control">
+                <mat-form-field appearance="outline">
+                    <mat-label>Quantity</mat-label>
+                    <input matInput type="number" [(ngModel)]="itemObj.quantity" min="1" (change)="updateQuantity(itemObj)">
+                </mat-form-field>
+                <button mat-button mat-icon-button color="warn" (click)="removeItem(itemObj.item)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <button *ngIf="items.length !== 0" mat-raised-button color="primary" (click)="uploadNewShippingItem(items)">Buy</button>
+    <div id="item2"></div>
+    <div *ngIf="items.length === 0" id="empty-cart-message">Your cart is empty.</div>
+    <button mat-raised-button color="primary" (click)="backToShop()">Back</button>
+    </div>
+</div>

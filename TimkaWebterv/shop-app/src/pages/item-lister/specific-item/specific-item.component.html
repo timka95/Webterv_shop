@@ -1,0 +1,14 @@
+<div id="mate">
+<div id="specific-item-wrapper">
+    <div class="item" *ngIf="item">
+        <h1>{{ item.name }}</h1>
+        <p>Price: ${{ item.price }}</p>
+        <p>{{ item.amount }} Remaining</p>
+        <img [src]="item.picture" alt="Item Image">
+        <p>{{ item.description }}</p>
+        <!-- <img [src]="'assets/pictures/duck.jpg'" alt="Item Image"> -->
+        <button mat-raised-button color="primary" (click)="addToCart()">Add to cart</button>
+        <button mat-raised-button color="primary" (click)="backToShop()">Back</button>
+    </div>
+</div>
+</div>

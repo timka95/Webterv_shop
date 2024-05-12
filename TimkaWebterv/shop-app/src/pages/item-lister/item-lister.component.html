@@ -1,0 +1,14 @@
+
+<div id="items-lister-wrapper">
+    <h2>Items</h2>
+    <div class="filters">
+        <mat-form-field appearance="fill">
+            <mat-label>Search by name...</mat-label>
+            <input matInput [(ngModel)]="filterTerm" name="filter" (input)="applyFilter()">
+        </mat-form-field>
+    </div>
+    <div class="items-wrapper">
+        <app-item [items]="filteredItems"></app-item>
+    </div>
+</div>
+

@@ -1,0 +1,87 @@
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: white;
+    padding: 10px;
+    
+    // height: 20%;
+}
+
+.item2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background-color: white;
+    padding: 10px;
+    
+    // height: 20%;
+}
+
+#empty-cart-message {
+    position: absolute; /* Position the message absolutely */
+    top: 40%; /* Position it 50% from the top */
+    left: 50%; /* Position it 50% from the left */
+    transform: translate(-50%, -50%); /* Center it vertically and horizontally */
+    font-size: 30px; /* Adjust the font size */
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#specific-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    color: rgba(246, 244, 228, 255);
+    text-shadow: 
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black; /* Apply black shadow to create the border effect */
+
+}
+
+#mate{
+    position: relative; 
+    background-image: url('/assets/Bc/CartnoCart.jpg'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-color: rgba(246, 244, 228, 255); /* Fallback color */
+        height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+
+    
+}
+
+#mate::after {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+#items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}

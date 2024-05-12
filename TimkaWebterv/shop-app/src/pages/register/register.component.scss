@@ -1,0 +1,48 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+  }
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    min-width: 800px;
+    margin: 0 auto;
+    background-color: #dfc39e;
+    border-radius: 5px;
+}
+
+.mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mat-input-element {
+    color: #333;
+}
+
+.mat-form-field-label {
+    color: #555;
+}
+
+.mat-form-field-underline {
+    background-color: #555;
+}
+
+.mat-button {
+    width: 100%;
+}
+
+.mat-raised-button.mat-primary {
+    background-color: #1976d2;
+    color: white;
+}
+
+.mat-raised-button.mat-primary:hover {
+    background-color: #1565c0;
+}

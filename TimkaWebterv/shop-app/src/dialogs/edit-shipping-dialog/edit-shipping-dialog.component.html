@@ -1,0 +1,22 @@
+<div id="edit-item-wrapper">
+    <h1 mat-dialog-title>Edit Item</h1>
+    <div mat-dialog-content>
+        <!-- Material inputs for editing item properties -->
+        <mat-form-field appearance="fill">
+            <mat-label>Status</mat-label>
+                <mat-select [(value)]="data.status">
+                <mat-option value="Bought">Bought</mat-option>
+                <mat-option value="Done">Done</mat-option>
+                <mat-option value="Shipped">Shipped</mat-option>
+                <mat-option value="On the way">OTW</mat-option>
+                <mat-option value="Arrived">Arrived</mat-option>
+            </mat-select>
+        </mat-form-field>        
+    </div>
+    <div mat-dialog-actions>
+        <!-- Material buttons for canceling and saving changes -->
+        <button mat-button (click)="onNoClick()">Cancel</button>
+        <button mat-button color="primary" [mat-dialog-close]="data" cdkFocusInitial (click)="saveChanges(data)">Save Changes</button>
+    </div>
+  </div>
+  

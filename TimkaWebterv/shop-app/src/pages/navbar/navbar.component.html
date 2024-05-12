@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <ul class="nav-items">
+        <li *ngIf="isGuest()"><a routerLink="/login" routerLinkActive="active">Login</a></li>
+        <li *ngIf="isUser()"><a (click)="logOut()">Logout</a></li>
+        <li *ngIf="isAdmin()"><a routerLink="/shipping" routerLinkActive="active">Shipping</a></li>
+        <li *ngIf="isGuest()"><a routerLink="/register" routerLinkActive="active">Register</a></li>
+        <li><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
+        <li *ngIf="isAdmin()"><a routerLink="/admin-items" routerLinkActive="active">Modify items</a></li>
+        <li class="rightNavItems" *ngIf="isUser()"><a routerLink="/cart" routerLinkActive="active"><mat-icon>shopping_cart</mat-icon> Cart</a>
+        </li>
+    </ul>
+</nav>
